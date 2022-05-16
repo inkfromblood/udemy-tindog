@@ -1,13 +1,16 @@
 
 body {
-
   font-family: "Montserrat";
 }
 
 #title {
 background-color: #ff4c68;
 color: white;
-padding: 3% 15%;
+
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
 }
 
 h1 {
@@ -60,14 +63,19 @@ h3 {
 
 /* Title Image */
 
+
 .title-image{
   transform: rotate(25deg);
-  width: 60%;
+  max-width: 60%;
+  position: absolute;
+  right: 25%;
 }
 
 /* Features */
 #features {
   padding: 7% 15%;
+  background-color: white;
+  position: relative;
 }
 
 .feature-item {
@@ -131,4 +139,18 @@ h3 {
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+
+ @media (max-width: 1028px) {
+
+#title {
+  text-align: center;
+}
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
 }
